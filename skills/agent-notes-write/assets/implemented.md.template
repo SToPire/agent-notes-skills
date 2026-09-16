@@ -1,0 +1,19 @@
+# Agent Note: {{title}}
+
+Status: implemented
+
+## Problem
+
+{{problem_and_constraints}}
+
+## Decision
+
+{{current_decision_and_implementation_facts}}
+
+## Alternatives considered
+
+**{{alternative}}:** {{evidence_and_reason_not_selected}}
+
+## Consequences
+
+{{benefits_costs_required_verification_and_coverage_gaps}}

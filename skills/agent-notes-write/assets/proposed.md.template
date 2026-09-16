@@ -1,0 +1,23 @@
+# Agent Note: {{title}}
+
+Status: proposed
+
+## Problem
+
+{{problem_and_constraints}}
+
+## Proposal
+
+{{intended_change_and_scope}}
+
+## Alternatives considered
+
+**{{alternative}}:** {{evidence_and_reason_not_selected}}
+
+## Acceptance criteria
+
+{{observable_completion_and_required_verification}}
+
+## Risks
+
+{{failure_modes_and_capabilities_given_up}}
