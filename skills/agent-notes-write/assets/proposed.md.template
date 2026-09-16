@@ -4,20 +4,20 @@ Status: proposed
 
 ## Problem
 
-{{problem_and_constraints}}
+{{project_problem_and_decision_driving_constraints}}
 
 ## Proposal
 
-{{intended_change_and_scope}}
+{{chosen_approach_why_it_fits_and_scope}}
 
 ## Alternatives considered
 
-**{{alternative}}:** {{evidence_and_reason_not_selected}}
+**{{genuine_alternative}}:** {{decisive_reason_not_selected}}
 
 ## Acceptance criteria
 
-{{observable_completion_and_required_verification}}
+{{observable_project_outcomes}}
 
 ## Risks
 
-{{failure_modes_and_capabilities_given_up}}
+{{material_tradeoffs_or_unresolved_project_constraints}}

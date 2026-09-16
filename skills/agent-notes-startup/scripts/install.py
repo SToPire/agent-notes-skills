@@ -17,6 +17,8 @@ ROOT_RULE = f"""{START}
 
 Every non-trivial change adds or updates an [Agent Note](.agents/notes/README.md) in the same PR; purely mechanical or local edits without a decision change are exempt. Use [agent-notes-write](.agents/skills/agent-notes-write/SKILL.md) to record proposals and decisions. Every new note includes a scoped supersession check through [agent-notes-maintain](.agents/skills/agent-notes-maintain/SKILL.md).
 
+Keep notes concise and at project-decision scope: rationale, trade-offs, and durable obligations. Local inspection history and incidental implementation plans belong outside the note; follow the [content rules](.agents/notes/README.md#decision-scope).
+
 Keep implemented records current with code in the same change. Review decision/implementation agreement with [agent-notes-review](.agents/skills/agent-notes-review/SKILL.md). Archived notes are frozen historical snapshots, never current authority.
 
 Run `python3 scripts/agent_notes.py check` before submitting changes to the Notes tree. Repair inbound links whenever a note moves or is deleted. CI archive checks use a trusted pre-change commit through `AGENT_NOTES_BASE_REF`.

@@ -13,9 +13,15 @@ A new note requires a local audit of notes about the same decision, mechanism, p
 
 For a read-only audit, report proposed dispositions. When maintenance is authorized or required by the note being written, apply the scoped dispositions and link repairs. Do not expand a local supersession check into unrelated corpus cleanup.
 
+## Keep active records at decision scope
+
+An overlong active note may still contain an important decision. When edits are authorized, remove local inspection history and incidental implementation inventories while preserving its rationale, trade-offs, and durable obligations. Link to an existing owner for necessary supporting detail. Do not archive a useful decision merely because its current prose is verbose, and do not modernize sealed history.
+
+Consolidation preserves unique decision knowledge, not every sentence of the old record. Carry forward verification guarantees and material evidence gaps without copying test matrices, machine-specific observations, or execution plans into the new owner. A detail belongs when losing it would change a future choice or permit an incorrect implementation.
+
 ## Classify records
 
-- **Implemented, keep:** its alternatives, ownership rules, negative guarantees, security or persistence semantics, required verification, coverage gap, or reintroduction conditions still guide plausible future changes.
+- **Implemented, keep:** its alternatives, ownership rules, negative guarantees, security or persistence semantics, verification obligations, material evidence gap, or reintroduction conditions still guide plausible future changes.
 - **Implemented, archive:** the decision is complete and its rationale is unlikely to guide future work. A closed one-off visual adjustment can qualify; a short durability rule can remain essential. Do not chase a quota.
 - **Proposed, retain or reject:** a live proposal remains proposed. An obsolete proposal moves to rejected with an honest reason; proposals never enter the archive.
 - **Rejected, retain or delete:** retain it while it prevents a tempting, meaningful mistake. Otherwise delete the note and repair inbound links. Its proposal body remains frozen while retained.

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An Agent Note records a proposal or decision that affects this project: why the problem matters, what was chosen, what alternatives lost, and what the choice costs. Code and ordinary documentation own current behavior and usage. Notes preserve the reasoning that can guide a future engineering decision.
+An Agent Note is a concise project-level record of a proposal or decision: why the problem matters, what was chosen, what alternatives lost, and what the choice costs. Keep the rationale and obligations that can guide a future engineering decision. Code, interface documentation, and task reports own implementation detail and execution evidence.
 
 ## Layout and naming
 
@@ -56,9 +56,9 @@ Substantial future work starts in `proposed/`; completed work can start directly
 | `rejected/` | A declined proposal; its body is frozen and the status line records the reason. Retain it only while it prevents a plausible meaningful mistake. |
 | `archived/` | A sealed historical snapshot of an implemented note; it is not current authority and cannot be changed. |
 
-Moving proposed work to implemented rewrites Proposal into a present-tense Decision and folds acceptance criteria and risks into Consequences or actual verification evidence. Remove unexecuted plans from the implemented account. Moving a proposal to rejected preserves its body and changes the status verdict. Proposals never enter the archive.
+Moving proposed work to implemented rewrites Proposal into a present-tense Decision and folds durable outcomes and trade-offs into Consequences. Link to existing verification evidence where it affects the decision; keep execution logs out of the record. Moving a proposal to rejected preserves its body and changes the status verdict. Proposals never enter the archive.
 
-An implemented note keeps paths, names, defaults, mechanisms, and verification facts current. Factual maintenance does not authorize reversing the decision. Read [implemented/AGENTS.md](implemented/AGENTS.md) before editing those records.
+An implemented note keeps its decision-relevant factual claims current without cataloging the implementation. Factual maintenance does not authorize reversing the decision. Read [implemented/AGENTS.md](implemented/AGENTS.md) before editing those records.
 
 ## Supersession and consolidation
 
@@ -98,13 +98,23 @@ Every note opens its body with `## Problem`. Required headings are:
 | `implemented` | `Decision`, `Alternatives considered`, `Consequences` |
 | `rejected` | `Proposal`, `Alternatives considered`; retain the proposal's other sections |
 
-Substantial technical sections can appear between required sections. Implemented notes cannot use `Proposal`, `Plan`, `Migration plan`, or `Acceptance criteria` as second-level headings. Testing, Verification, Deferred, and Related sections can state current facts and actual evidence.
+Use the required sections without extra subsections by default. Add a technical section only when it is necessary to explain a consequential choice or obligation. Proposed notes describe the intended approach and observable outcomes, not an implementation plan. Implemented notes cannot use `Proposal`, `Plan`, `Migration plan`, or `Acceptance criteria` as second-level headings. An optional verification section records a material limitation or durable guarantee and links to its evidence, rather than listing checks and their output.
 
 Alternatives are mandatory and must be genuine. Describe each candidate and why it lost in a bold-led paragraph or a `Why not …?` subsection. Do not invent historical deliberation to fill the section; establish the evidence or explicitly report the gap. A new proposal can compare keeping current behavior with changing it. This fresh-repository mechanism has no legacy-format exemption.
 
+## Decision scope
+
+For each candidate fact, ask whether omitting it would obscure the choice, its trade-offs, or an obligation that future changes must preserve. Keep the project problem, chosen approach, ownership, user-visible scope, genuine alternatives, and material consequences. Research can be extensive while its decision record remains short.
+
+Omit the author's machine state: inspection dates, installed binary versions, home or temporary paths, shell output, account state, and one-off environment limitations. Keep a version, platform, or deployment constraint only when the project explicitly adopts it and it affects the decision. Cite the owning requirement; do not infer a support promise from a local observation. The filename's first-proposed date remains required metadata.
+
+Keep file-by-file change plans, call traces, API and database inventories, algorithms, UI interaction specifications, work sequencing, and test matrices in their owning code or documentation. Exact technical detail belongs in a note only when the choice depends on it, such as a field's compatibility or ownership semantics. Link existing owners for supporting detail. Do not create a companion plan or appendix solely to preserve text that does not belong in the record.
+
+Each required section normally needs one short paragraph or a small list. Acceptance criteria state a few observable project outcomes; risks state material trade-offs or unresolved constraints. Avoid repeating scope in several sections. Before expanding a record, identify the choice, trade-off, or obligation the extra prose explains. Preserve necessary negative guarantees and compatibility obligations; length alone is neither a correctness check nor a retention criterion.
+
 ## Writing
 
-Write one physical line per paragraph and exactly one trailing newline. Preserve actors, conditions, obligations, exceptions, timing, ownership, failures, benefits, and costs. Keep unique decision rationale and named verification gaps. Use concrete terms. Remove session-only citations, reviewer dialogue, code walkthroughs, and ungrounded planning residue. References must be understandable without the authoring conversation.
+Write one physical line per paragraph and exactly one trailing newline. Preserve the decision's actors, conditions, obligations, exceptions, benefits, and costs. Keep a verification gap only when it changes confidence in the choice or constrains adoption. Use concrete terms and references understandable without the authoring conversation. Put commands run and local inspection details in the task handoff. Remove reviewer dialogue, code walkthroughs, and ungrounded planning residue.
 
 ## Checks
 

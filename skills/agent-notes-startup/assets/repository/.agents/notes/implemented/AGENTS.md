@@ -2,7 +2,7 @@
 
 These notes describe completed decisions. Follow the [root instructions](../../../AGENTS.md) and the [Agent Note format](../README.md#the-file-format).
 
-Keep paths, symbols, defaults, mechanisms, and verification facts current in the same change that alters them. Rewrite stale facts in place; do not append change narration. Describe actual behavior in the present tense and retain meaningful consequences and evidence.
+Keep the note's decision-relevant facts current in the same change that alters them. Rewrite stale claims in place; do not add implementation inventories or inspection history. State the chosen approach in the present tense and retain its rationale, meaningful consequences, and durable obligations. Link to the existing owner of supporting evidence.
 
 Factual maintenance cannot reverse the decision or its rationale. A different decision needs a new note and cross-links. Delete a fully superseded note only under the README's consolidation rule.
 

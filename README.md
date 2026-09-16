@@ -8,6 +8,7 @@ Install DSH's Agent Notes mechanism in a fresh repository, then record, review, 
 
 - [Use the suite](#use-the-suite)
 - [Skills](#skills)
+- [Note scope](#note-scope)
 - [Installed files](#installed-files)
 - [Extraction from DSH](#extraction-from-dsh)
 - [Checks](#checks)
@@ -38,6 +39,10 @@ Then run `python3 scripts/agent_notes.py check` from the target project. The ins
 | [agent-notes-review](skills/agent-notes-review/SKILL.md) | Compare records with implementation, evidence, and lifecycle rules. | “Check whether these notes accurately describe the change.” |
 
 The installed project README owns the rules. Skills contain the procedures and decision criteria used to apply them. Writing a new record includes a scoped maintenance audit; a standalone review reports findings unless fixes are also requested.
+
+## Note scope
+
+Notes record project decisions, their reasons, trade-offs, and durable obligations. A proposal states an approach and observable outcomes. Keep local inspection history and incidental implementation plans out of both proposed and implemented records. The writing skill includes [content-selection examples](skills/agent-notes-write/references/decision-scope.md); review checks this scope alongside factual accuracy. Project-adopted versions and exact technical guarantees remain appropriate when the decision depends on them.
 
 ## Installed files
 

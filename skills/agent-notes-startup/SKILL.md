@@ -5,7 +5,7 @@ description: Install the DSH-derived Agent Notes directory, rules, templates, ma
 
 # Start Agent Notes
 
-Install a self-contained decision-record system in the target repository. The supplied rules preserve the DSH lifecycle, six classes, supersession audit, and frozen archive. Each note is one Markdown file. Read [the installation reference](references/installation.md) for file destinations, retry behavior, and CI integration.
+Install a self-contained decision-record system in the target repository. The supplied rules preserve the DSH lifecycle, six classes, supersession audit, and frozen archive. Each note is one concise Markdown record of a project decision and its durable rationale. Read [the installation reference](references/installation.md) for file destinations, retry behavior, and CI integration.
 
 ## Install
 

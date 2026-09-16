@@ -1,6 +1,6 @@
 ---
 name: agent-notes-review
-description: Review Agent Notes against a proposal, code change, or pull request for missing rationale, incorrect lifecycle state, implementation drift, and unresolved supersession. Use for decision-record review in repositories with the Agent Notes mechanism.
+description: Review Agent Notes for durable project rationale, concise scope, lifecycle accuracy, implementation agreement, and supersession. Use when a note needs review or contains machine-specific observations, excessive implementation detail, or missing trade-offs.
 ---
 
 # Review Agent Notes
@@ -14,7 +14,7 @@ Establish the actual diff and its base when reviewing a change. Inspect enough s
 - Does the change require a new or updated note? Does an existing record already own it?
 - Does a proposal describe observable acceptance criteria and real risks? Is partly completed work still identified as proposed?
 - Does an implemented record match actual paths, symbols, defaults, mechanisms, failures, and externally visible behavior? Does a completed proposal include its lifecycle move and body rewrite?
-- Are alternatives grounded in evidence? Do consequences preserve both benefits and costs, required verification, and coverage gaps?
+- Are alternatives grounded in evidence? Do consequences preserve both benefits and costs, durable verification obligations, and limitations that affect the decision?
 - Does a changed decision explicitly relate to its predecessor? Are partial replacements retained, and are full consolidations lossless?
 - Do code and tests establish the claimed behavior? Distinguish observed checks from planned checks or the author's self-report.
 
@@ -22,7 +22,14 @@ A disagreement with an existing note calls for design analysis. Identify whether
 
 ## Review prose and references
 
-Preserve conditions, obligations, exceptions, ownership, failure behavior, and consequences when suggesting a shorter version. Flag session-only citations, reviewer-addressed arguments, implementation walkthroughs, and proposal-era planning in implemented notes. Retain durable decision rationale and resolvable issue or historical references in their appropriate context.
+Treat relevance and level of detail as part of the review. A fact can be accurate and still be unsuitable for a project decision record. Apply these questions to proposed notes as well as implemented ones:
+
+- Does the reader need this passage to understand the choice, its trade-offs, or a durable obligation? Flag investigation narration and implementation instructions that fail this test.
+- Does a date, tool version, absolute path, or environment limitation describe the project or only the author's machine? Keep adopted support and format constraints; flag local observations presented as project requirements.
+- Does a proposal explain an approach and observable outcomes, or prescribe call chains, fields, tables, UI mechanics, work sequencing, and test cases? Ask for the decision-level statement and a link to an existing owner where needed.
+- Does each section add distinct information? Flag repeated scope, unnecessary subsections, and exhaustive catalogs. Length alone is not a defect when every paragraph explains a consequential decision.
+
+Preserve the conditions, exceptions, ownership, and negative guarantees that belong to the decision when suggesting a shorter version. Remove session-only citations and reviewer dialogue. Give a concrete cut or concise replacement for excessive detail; “be more concise” is not an actionable finding.
 
 Check that the note's claims, tables, code, and references agree with the implementation evidence. Check inbound links after moves and deletions. Exclude archived sources from prose and outgoing-link audits.
 

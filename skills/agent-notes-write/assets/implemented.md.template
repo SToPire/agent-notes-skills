@@ -4,16 +4,16 @@ Status: implemented
 
 ## Problem
 
-{{problem_and_constraints}}
+{{project_problem_and_decision_driving_constraints}}
 
 ## Decision
 
-{{current_decision_and_implementation_facts}}
+{{chosen_approach_and_decisive_rationale}}
 
 ## Alternatives considered
 
-**{{alternative}}:** {{evidence_and_reason_not_selected}}
+**{{genuine_alternative}}:** {{decisive_reason_not_selected}}
 
 ## Consequences
 
-{{benefits_costs_required_verification_and_coverage_gaps}}
+{{benefits_costs_and_durable_constraints}}
